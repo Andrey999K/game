@@ -1,0 +1,93 @@
+body,
+input,
+button {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: #4444b8;
+}
+
+.green {
+    color: #2b7a2b;
+}
+
+.row {
+    height: 10vh;
+}
+
+.word {
+    position: absolute;
+    right: 0px;
+    margin-left: 10px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.input,
+button {
+    height: 40px;
+    font-size: 30px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #e9bcbc;
+}
+
+.countdown {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    top: calc(50% - 15px);
+    right: calc(50% - 30px);
+    color: red;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.countdown_start {
+    opacity: 1;
+    width: 1000px;
+    top: calc(50% - 250px);
+    right: calc(50% - 500px);
+    font-size: 500px;
+    line-height: 500px;
+    /* transition-property: */
+    transition:
+        width 1s ease-out 0s,
+        line-height 1s ease-out 0s,
+        font-size 1s ease-out 0s,
+        right 1s ease-out 0s,
+        top 1s ease-out 0s;
+    z-index: 999;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+}
+
+.score {
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+.health {
+    display: flex;
+    margin-left: 100px;
+}
+
+.heart {
+    margin-right: 5px;
+}
