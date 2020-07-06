@@ -7,6 +7,14 @@ button {
     font-family: sans-serif;
 }
 
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
 .red {
     color: red;
 }
